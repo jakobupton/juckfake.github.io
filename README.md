@@ -1,3 +1,1 @@
-# juckfake.github.io
-# juckfake.github.io
-# juckfake.github.io
+# Messing around with HTML/CSS, maybe making a portfolio
