@@ -6,9 +6,9 @@ html{
 body{
   height: calc(100vh - 8em);
   padding: 0em;
-  color: rgba(255,255,255,.75);
+  color: #EDFFEC;
   font-family: 'Roboto Mono', monospace;  
-  background-color: rgb(10,10,10);  
+  background-color: #3A405A;  
 }
 .line-1{
     position: relative;
@@ -23,12 +23,12 @@ body{
     transform: translateY(-50%);    
 }
 .anim-typewriter{
-  animation: typewriter 1.8s steps(13) 0.5s 1 normal both,
-             blinkTextCursor 500ms steps(33) infinite normal;
+  animation: typewriter 1.8s steps(18) 0.5s 1 normal both,
+             blinkTextCursor 700ms steps(25) infinite normal;
 }
 @keyframes typewriter{
   from{width: 0;}
-  to{width: 7.7em;}
+  to{width: 12em;}
 }
 @keyframes blinkTextCursor{
   from{border-right-color: rgba(255,255,255,.75);}
@@ -52,32 +52,42 @@ body{
     font-size: 20px;
     text-align: center;
 }
-
-@keyframes rotate {
-    from {
-        rotate: 0deg;
-    }
-    50% {
-        scale: 1 1.2;
-    }
-    to{
-        rotate: 360deg;
-    }
+button{
+  font-family: Roboto Mono;
+  font-size: 14px;
+  text-align: center;
+  color: #EDFFEC;
+  background: transparent;
+  border: none;
+  padding-top: 2em;
 }
-#blob{
-    background-color: white;
-    height: 45vmax;
-    position: aboslute;
-    left: 50%;
-    top: 50%;
-    translate: 0% 50%;
-    border-radius: 50%;
-    background: linear-gradient(
-        to right,
-        aquamarine,
-        mediumpurple
-    );
-    animation: rotate 60s infinite;
-    opacity: 0.4;
-    filter: blur(12vmax);
+.highlight{
+    color: #61E786;
+}
+button:hover{
+    color: #61E786;
+    cursor: pointer;
+}
+
+.resume-button{
+    border: 2px solid #61E786;
+    border-radius: 5px;
+    padding: 0.5em 1em;
+    background: transparent;
+    color: #61E786;
+    transition: all 0.3s ease-in-out;
+}
+
+.resume-button:hover{
+    background: #61E786;
+    color: #3A405A;
+    cursor: pointer;
+}
+
+header-right{
+  display: relative; 
+  justify-content: right; 
+  margin-left: auto; 
+  margin-right: 0; 
+  width: fit-content;
 }
